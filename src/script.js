@@ -42,7 +42,7 @@ const claimForm = document.getElementById('claim-form');
 const viewClaim = document.getElementById('claim-data');
 const claimButton = document.getElementById('claim-button');
 const viewClaimButton = document.getElementById('view-claim-button');
-
+const claimImage = document.getElementById('claim-image')
 
 adminSignupButton.addEventListener("click",function(e){
     e.preventDefault();
@@ -50,6 +50,7 @@ adminSignupButton.addEventListener("click",function(e){
     signupForm.style.display = "none"
     loginFormAdmin.style.display = "none"
     loginForm.style.display = "none"
+    claimImage.style.display = 'none'
 })
 
 nonAdminSignupButton.addEventListener("click",function(e){
@@ -58,6 +59,7 @@ nonAdminSignupButton.addEventListener("click",function(e){
     signupFormAdmin.style.display = "none"
     loginFormAdmin.style.display = "none"
     loginForm.style.display = "none"
+    claimImage.style.display = 'none'
 })
 
 
@@ -67,6 +69,7 @@ adminLoginButton.addEventListener("click",function(e){
     signupForm.style.display = "none"
     signupFormAdmin.style.display = "none"
     loginForm.style.display = "none"
+    claimImage.style.display = 'none'
 })
 
 nonAdminLoginButton.addEventListener("click",function(e){
@@ -75,12 +78,14 @@ nonAdminLoginButton.addEventListener("click",function(e){
     loginFormAdmin.style.display = "none"
     signupForm.style.display = "none"
     signupFormAdmin.style.display = "none"
+    claimImage.style.display = 'none'
 })
 
 
 logoutButton.addEventListener("click", function(e){
     e.preventDefault();
     adminLoginButton.style.display = "block";
+    claimImage.style.display = "block"
     nonAdminLoginButton.style.display = "block";
     adminSignupButton.style.display = "block";
     nonAdminSignupButton.style.display = "block";
@@ -88,6 +93,7 @@ logoutButton.addEventListener("click", function(e){
     viewClaimButton.style.display ='none'
     logoutButton.style.display = 'none'
     document.getElementById("user-profile").textContent = 'Profile';
+   document.getElementById('claim-data').style.display= 'none';
 
 })
 
