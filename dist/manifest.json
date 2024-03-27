@@ -1,0 +1,26 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "pwa-claim-app",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "pwa-claim-app",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "id": "pwa-claim-app",
+  "categories": [
+    "business"
+  ],
+  "description": "App which manages the claim",
+  "lang": "en",
+  "prefer_related_applications": true,
+  "iarc_rating_id": "1234",
+  "icons":[
+    {
+      "type": "image/png",
+      "sizes": "512x512",
+      "src": "claim-logo.png"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background: rgb(52, 30, 121);
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    padding: 8px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#sign-up-form-admin , #sign-up-form ,#login-form, #login-form-admin, #claim-button, #view-claim-button, #claim-form {
+   display: none;
+
+}
+#logout{
+    display: none;
+}

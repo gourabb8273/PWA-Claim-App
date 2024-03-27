@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>PWA Claim App</title>
+        <link rel="icon" type="image/png" href="./claim-logo.png"/>
+        <link rel="manifest" href="./manifest.json"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <a id="user-profile" href="#" >Profile</a>    
+            <a id="admin-signup" href="#" >Admin Signup</a>    
+            <a id="signup" href="#" >Non-Admin Signup</a>   
+            <a id="admin-login" href="#" >Admin Login</a>    
+            <a id="login" href="#" >Non-Admin Login</a>    
+            <a id="logout" href="#" >Logout</a>         
+            <a id="claim-button" href="#" >Claim Form</a>  
+            <a id="view-claim-button" href="#" >View Claim</a>  
+        </div>
+        <form id="sign-up-form-admin">
+            <h3>Admin Registration Form</h3>
+            <label>Name</label>
+            <input id="signup-name-admin" type="text" placeholder="enter name"/>
+            <label>Email</label>
+            <input id="signup-email-admin" type="text" placeholder="enter email"/>
+            <label>Password</label>
+            <input  id="signup-password-admin" type="password" placeholder="enter Password"/>
+            <button type="submit">Admin Signup</button>
+        </form>
+
+        <form id="sign-up-form">
+            <h3>Non Admin Registration Form</h3>
+            <label>Name</label>
+            <input id="signup-name" type="text" placeholder="enter name"/>
+            <label>Email</label>
+            <input id="signup-email" type="text" placeholder="enter email"/>
+            <label>Password</label>
+            <input  id="signup-password" type="password" placeholder="enter Password"/>
+            <button type="submit">Signup</button>
+        </form>
+
+        <form id="login-form-admin">
+            <h3>Admin Login Form</h3>
+            <label>Email</label>
+            <input id="login-email-admin" type="text" placeholder="enter email"/>
+            <label>Password</label>
+            <input  id="login-password-admin" type="password" placeholder="enter Password"/>
+            <button type="submit">Admin Login</button>
+        </form>
+
+        <form id="login-form">
+            <h3>Non Admin Login Form</h3>
+            <label>Email</label>
+            <input id="login-email" type="text" placeholder="enter email"/>
+            <label>Password</label>
+            <input  id="login-password" type="password" placeholder="enter Password"/>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="claim-form">
+            <h3>Claim Form</h3>
+            <label>Claim Amount</label>
+            <input id="claim-amount" type="number" placeholder="enter claim amount"/>
+            <label>Claim description</label>
+            <textarea  id="claim-description" type="text" placeholder="enter claim description"></textarea>
+            <button type="submit">Add claim</button>
+        </form>
+        <div id="claim-data"></div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
